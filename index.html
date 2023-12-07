@@ -1,0 +1,39 @@
+<div>
+    <input id="name" placeholder="Enter the username">
+    <input id="pin" placeholder="Enter the password">
+    <button id="btn" onclick="login()">log in</button>
+</div>
+<style>
+    div {
+        margin-top: 300px;
+        margin-left: 450px;
+    }
+</style>
+<script>
+    var datas = [
+        {
+            username: "yosuva",
+            password: "1234"
+        }
+    ]
+
+    function login() {
+        var username = document.getElementById('name').value
+        var password = document.getElementById('pin').value
+        var check = false
+        for (let i of datas) {
+            if (username == i.username && password == i.password) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            alert("login sucessfuly")
+        } else {
+            alert("login failed")
+        }
+    }
+
+
+
+</script>
