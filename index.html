@@ -1,14 +1,15 @@
-<div>
-    <input id="name" placeholder="Enter the username">
-    <input id="pin" placeholder="Enter the password">
-    <button id="btn" onclick="login()">log in</button>
+<div class=" items-center h-64 w-64 flex flex-col bg-pink-300 mt-16 ml-16 p-12 border rounded-3xl shadow-2xl sm:w-full">
+    <h1 class="font-extrabold">LOGIN</h1>
+    <input id="name" placeholder="Enter the username" class="h-10 w-52 bg-blue-200 mt-6 mb-6 hover:outline-none">
+    <input id="pin" placeholder="Enter the password"  class="h-10 w-52 bg-blue-200 ">
+    <button id="btn"class="bg-blue-900 w-20 h-12 mt-10 p-2 border rounded-full font-semibold  shadow-xl" onclick="login()">LoG In</button>
+    
 </div>
-<style>
-    div {
-        margin-top: 300px;
-        margin-left: 450px;
-    }
-</style>
+<link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
 <script>
     var datas = [
         {
